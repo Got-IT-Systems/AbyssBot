@@ -256,7 +256,7 @@
                         "name": "register_slash_commands",
                         "inputs": {},
                         "options": {
-                            "text": "{\n  \"name\": \"info\",\n  \"description\": \"Show the bot information\",\n  \"options\": []\n},\n{\n  \"name\": \"berichtmaken\",\n  \"description\": \"Send a message on behalf of the Bot\",\n  \"options\": []\n},\n{\n  \"name\": \"stats\",\n  \"description\": \"Show the stats of the server\",\n  \"options\": []\n},\n{\n  \"name\": \"help\",\n  \"description\": \"Show the Help URL (deprecated)\",\n  \"options\": []\n},\n{\n  \"name\": \"modhelp\",\n  \"description\": \"Show the modhelp URL (deprecated)\",\n  \"options\": []\n},\n{\n  \"name\": \"transcript\",\n  \"description\": \"Transcript the current ticket\",\n  \"options\": []\n},\n{\n  \"name\": \"close\",\n  \"description\": \"Close a ticket\",\n  \"options\": []\n},\n{\n  \"name\": \"appealapprove\",\n  \"description\": \"Accept an appeal\",\n  \"options\": []\n},\n{\n  \"name\": \"appealreject\",\n  \"description\": \"Reject an appeal\",\n  \"options\": [\n    {\n      \"type\": 3,\n      \"name\": \"reason\",\n      \"description\": \"The reason for the rejection\",\n      \"required\": true\n    }\n  ]\n},\n{\n  \"name\": \"confirmations\",\n  \"description\": \"Shows the unverified stats\",\n  \"options\": []\n},\n{\n  \"name\": \"messages\",\n  \"description\": \"See how many messages a user sent the past month\",\n  \"options\": [\n    {\n      \"type\": 3,\n      \"name\": \"userid\",\n      \"description\": \"The user ID of the user.\",\n      \"required\": true\n    }\n  ]\n},\n{\n  \"name\": \"confirm\",\n  \"description\": \"Accept new person into the server\",\n  \"options\": [\n    {\n      \"type\": 6,\n      \"name\": \"person\",\n      \"description\": \"The person you want to accept\",\n      \"required\": true\n    }\n  ]\n},\n{\n  \"name\": \"verify\",\n  \"description\": \"Verify a user (18+ verification)\",\n  \"options\": [\n    {\n      \"type\": 6,\n      \"name\": \"person\",\n      \"description\": \"The person you want to verify\",\n      \"required\": true\n    }\n  ]\n},\n{\n  \"name\": \"remove\",\n  \"description\": \"Remove person from ticket\",\n  \"options\": [\n    {\n      \"type\": 6,\n      \"name\": \"person\",\n      \"description\": \"The person you want to remove from the ticket\",\n      \"required\": true\n    }\n  ]\n},\n{\n  \"name\": \"bdayrole\",\n  \"description\": \"Manually assign birthday role\",\n  \"options\": [\n    {\n      \"type\": 6,\n      \"name\": \"user\",\n      \"description\": \"The person you want to have the birthday role\",\n      \"required\": true\n    }\n  ]\n},\n{\n  \"name\": \"setbday\",\n  \"description\": \"Set your birthday\",\n  \"options\": [\n    {\n      \"type\": 3,\n      \"name\": \"date\",\n      \"description\": \"Date in the dd-mm format (so no dd/mm or mm/dd)\",\n      \"required\": true\n    }\n  ]\n},\n{\n{\n  \"name\": \"new\",\n  \"description\": \"Create a new ticket with a person\",\n  \"options\": [\n    {\n      \"type\": 6,\n      \"name\": \"person\",\n      \"description\": \"The person you want to put into a ticket\",\n      \"required\": true\n    }\n  ]\n},\n{\n  \"name\": \"jail\",\n  \"description\": \"Give a timeout\",\n  \"options\": [\n    {\n      \"type\": 6,\n      \"name\": \"person\",\n      \"description\": \"Person who needs to be jailed\",\n      \"required\": true\n    }\n  ]\n},\n{\n  \"name\": \"unjail\",\n  \"description\": \"Remove someones timeout\",\n  \"options\": [\n    {\n      \"type\": 6,\n      \"name\": \"person\",\n      \"description\": \"Person who needs to be unjailed\",\n      \"required\": true\n    }\n  ]\n},\n{\n    \"name\": \"update\",\n    \"description\": \"Send a message showing added & removed features of your software\",\n    \"options\": []\n},\n{\n    \"name\": \"ticketpanel\",\n    \"description\": \"Create a new ticket panel\",\n    \"options\": []\n},\n{\n    \"name\": \"setconfig\",\n    \"description\": \"Create configuration value\",\n    \"options\": [\n        {\n            \"name\": \"config\",\n            \"description\": \"Name of the config file\",\n            \"required\": true,\n            \"type\": 3\n        },\n        {\n            \"name\": \"value\",\n            \"description\": \"The configuration value\",\n            \"required\": true,\n            \"type\": 3\n        }\n    ]\n},\n{\n    \"name\": \"age\",\n    \"description\": \"Manually set age\",\n    \"dm_permission\": false,\n    \"options\": [\n        {\n            \"name\": \"user\",\n            \"description\": \"The user whose age needs to be registered\",\n            \"required\": true,\n            \"type\": 6\n        },\n        {\n            \"name\": \"age\",\n            \"description\": \"The age\",\n            \"required\": true,\n            \"type\": 3\n        }\n    ]\n},\n{\n    \"name\": \"notecreate\",\n    \"description\": \"Create note for a user\",\n    \"dm_permission\": false,\n    \"options\": [\n        {\n            \"name\": \"user\",\n            \"description\": \"The user who needs to get a note on their name\",\n            \"required\": true,\n            \"type\": 6\n        },\n        {\n            \"name\": \"note\",\n            \"description\": \"The note\",\n            \"required\": true,\n            \"type\": 3\n        }\n    ]\n},\n{\n    \"name\": \"noteidcreate\",\n    \"description\": \"Create note for a user based on User ID\",\n    \"dm_permission\": false,\n    \"options\": [\n        {\n            \"name\": \"user\",\n            \"description\": \"The userID of the user who needs to get a note on their name\",\n            \"required\": true,\n            \"type\": 3\n        },\n        {\n            \"name\": \"note\",\n            \"description\": \"The note\",\n            \"required\": true,\n            \"type\": 3\n        }\n    ]\n},\n{\n    \"name\": \"noteedit\",\n    \"description\": \"Edit a note\",\n    \"dm_permission\": false,\n    \"options\": [\n        {\n            \"name\": \"id\",\n            \"description\": \"ID of the note\",\n            \"required\": true,\n            \"type\": 3\n        },\n        {\n            \"name\": \"note\",\n            \"description\": \"The note, be aware, this overwrites the old note.\",\n            \"required\": true,\n            \"type\": 3\n        }\n        ]\n},\n{\n    \"name\": \"notes\",\n    \"description\": \"Show notes on a user\",\n    \"dm_permission\": false,\n    \"options\": [\n        {\n            \"name\": \"user\",\n            \"description\": \"User you want to show the notes of.\",\n            \"required\": true,\n            \"type\": 6\n        }\n        ]\n},\n{\n    \"name\": \"notedelete\",\n    \"description\": \"Delete a note\",\n    \"dm_permission\": false,\n    \"options\": [\n        {\n            \"name\": \"id\",\n            \"description\": \"ID of the note you wish to delete\",\n            \"required\": true,\n            \"type\": 3\n        }\n        ]\n},\n{\n    \"name\": \"notesid\",\n    \"description\": \"See notes on a user based on UserID\",\n    \"dm_permission\": false,\n    \"options\": [\n        {\n            \"name\": \"userid\",\n            \"description\": \"The UserID of the user you want to see the notes of\",\n            \"required\": true,\n            \"type\": 3\n        }\n        ]\n},\n{\n  \"name\": \"kick\",\n  \"description\": \"Kick someone\",\n  \"options\": [\n    {\n      \"type\": 6,\n      \"name\": \"account\",\n      \"description\": \"The person to kick\",\n      \"required\": true\n    },\n{\n      \"type\": 3,\n      \"name\": \"reason\",\n      \"description\": \"Reason\",\n      \"required\": true\n    }\n  ]\n},\n{\n  \"name\": \"ban\",\n  \"description\": \"Ban someone\",\n  \"options\": [\n    {\n      \"type\": 6,\n      \"name\": \"account\",\n      \"description\": \"The person to ban\",\n      \"required\": true\n    },\n{\n      \"type\": 3,\n      \"name\": \"reason\",\n      \"description\": \"Ban reason\",\n      \"required\": true\n    }\n  ]\n},\n{\n  \"name\": \"idban\",\n  \"description\": \"Ban someone based on their UserID\",\n  \"options\": [\n    {\n      \"type\": 3,\n      \"name\": \"account\",\n      \"description\": \"The UserID of the person\",\n      \"required\": true\n    },\n{\n      \"type\": 3,\n      \"name\": \"reason\",\n      \"description\": \"Ban reason\",\n      \"required\": true\n    }\n  ]\n},\n{\n    \"name\": \"warn\",\n    \"description\": \"Register a warning\",\n    \"dm_permission\": false,\n    \"options\": [\n        {\n            \"name\": \"user\",\n            \"description\": \"The user you want to warn\",\n            \"required\": true,\n            \"type\": 6\n        },\n        {\n            \"name\": \"warning\",\n            \"description\": \"The warning you want to put in the system\",\n            \"required\": true,\n            \"type\": 3\n        }\n    ]\n},\n{\n    \"name\": \"warnid\",\n    \"description\": \"Warn someone based on their UserID\",\n    \"dm_permission\": false,\n    \"options\": [\n        {\n            \"name\": \"user\",\n            \"description\": \"The user you want to warn\",\n            \"required\": true,\n            \"type\": 3\n        },\n        {\n            \"name\": \"warning\",\n            \"description\": \"The warning you want to put in the system\",\n            \"required\": true,\n            \"type\": 3\n        }\n    ]\n},\n{\n    \"name\": \"warningedit\",\n    \"description\": \"Edit a warning\",\n    \"dm_permission\": false,\n    \"options\": [\n        {\n            \"name\": \"id\",\n            \"description\": \"ID of the warning\",\n            \"required\": true,\n            \"type\": 3\n        },\n        {\n            \"name\": \"warning\",\n            \"description\": \"The warning, be aware, this overwrites the old warning.\",\n            \"required\": true,\n            \"type\": 3\n        }\n        ]\n},\n{\n    \"name\": \"warnings\",\n    \"description\": \"Show warnings on a user\",\n    \"dm_permission\": false,\n    \"options\": [\n        {\n            \"name\": \"user\",\n            \"description\": \"User you want to show the warnings of.\",\n            \"required\": true,\n            \"type\": 6\n        }\n        ]\n},\n{\n    \"name\": \"warningdelete\",\n    \"description\": \"Delete a warning\",\n    \"dm_permission\": false,\n    \"options\": [\n        {\n            \"name\": \"id\",\n            \"description\": \"ID of the warning you wish to delete\",\n            \"required\": true,\n            \"type\": 3\n        }\n        ]\n},\n{\n    \"name\": \"warningsid\",\n    \"description\": \"See warnings on a user based on UserID\",\n    \"dm_permission\": false,\n    \"options\": [\n        {\n            \"name\": \"userid\",\n            \"description\": \"The UserID of the user you want to see the warnings of\",\n            \"required\": true,\n            \"type\": 3\n        }\n        ]\n},\n{\n    \"name\": \"remind\",\n    \"description\": \"Create a reminder\",\n    \"dm_permission\": false,\n    \"options\": [\n        {\n            \"name\": \"minutes\",\n            \"description\": \"In how many minutes should I remind you? (NUMBERS ONLY)\",\n            \"required\": true,\n            \"type\": 3\n        },\n        {\n            \"name\": \"reminder\",\n            \"description\": \"What do I need to remind you of?\",\n            \"required\": true,\n            \"type\": 3\n        }\n        ]\n}"
+                            "text": "{\n  \"name\": \"info\",\n  \"description\": \"Show the bot information\",\n  \"options\": []\n},\n{\n  \"name\": \"sendmessage\",\n  \"description\": \"Send a message on behalf of the Bot\",\n  \"options\": []\n},\n{\n  \"name\": \"stats\",\n  \"description\": \"Show the stats of the server\",\n  \"options\": []\n},\n{\n  \"name\": \"help\",\n  \"description\": \"Show the Help URL (deprecated)\",\n  \"options\": []\n},\n{\n  \"name\": \"modhelp\",\n  \"description\": \"Show the modhelp URL (deprecated)\",\n  \"options\": []\n},\n{\n  \"name\": \"transcript\",\n  \"description\": \"Transcript the current ticket\",\n  \"options\": []\n},\n{\n  \"name\": \"close\",\n  \"description\": \"Close a ticket\",\n  \"options\": []\n},\n{\n  \"name\": \"appealapprove\",\n  \"description\": \"Accept an appeal\",\n  \"options\": []\n},\n{\n  \"name\": \"appealreject\",\n  \"description\": \"Reject an appeal\",\n  \"options\": [\n    {\n      \"type\": 3,\n      \"name\": \"reason\",\n      \"description\": \"The reason for the rejection\",\n      \"required\": true\n    }\n  ]\n},\n{\n  \"name\": \"confirmations\",\n  \"description\": \"Shows the unverified stats\",\n  \"options\": []\n},\n{\n  \"name\": \"messages\",\n  \"description\": \"See how many messages a user sent the past month\",\n  \"options\": [\n    {\n      \"type\": 3,\n      \"name\": \"userid\",\n      \"description\": \"The user ID of the user.\",\n      \"required\": true\n    }\n  ]\n},\n{\n  \"name\": \"confirm\",\n  \"description\": \"Accept new person into the server\",\n  \"options\": [\n    {\n      \"type\": 6,\n      \"name\": \"person\",\n      \"description\": \"The person you want to accept\",\n      \"required\": true\n    }\n  ]\n},\n{\n  \"name\": \"verify\",\n  \"description\": \"Verify a user (18+ verification)\",\n  \"options\": [\n    {\n      \"type\": 6,\n      \"name\": \"person\",\n      \"description\": \"The person you want to verify\",\n      \"required\": true\n    }\n  ]\n},\n{\n  \"name\": \"remove\",\n  \"description\": \"Remove person from ticket\",\n  \"options\": [\n    {\n      \"type\": 6,\n      \"name\": \"person\",\n      \"description\": \"The person you want to remove from the ticket\",\n      \"required\": true\n    }\n  ]\n},\n{\n  \"name\": \"bdayrole\",\n  \"description\": \"Manually assign birthday role\",\n  \"options\": [\n    {\n      \"type\": 6,\n      \"name\": \"user\",\n      \"description\": \"The person you want to have the birthday role\",\n      \"required\": true\n    }\n  ]\n},\n{\n  \"name\": \"setbday\",\n  \"description\": \"Set your birthday\",\n  \"options\": [\n    {\n      \"type\": 3,\n      \"name\": \"date\",\n      \"description\": \"Date in the dd-mm format (so no dd/mm or mm/dd)\",\n      \"required\": true\n    }\n  ]\n},\n{\n{\n  \"name\": \"new\",\n  \"description\": \"Create a new ticket with a person\",\n  \"options\": [\n    {\n      \"type\": 6,\n      \"name\": \"person\",\n      \"description\": \"The person you want to put into a ticket\",\n      \"required\": true\n    }\n  ]\n},\n{\n  \"name\": \"jail\",\n  \"description\": \"Give a timeout\",\n  \"options\": [\n    {\n      \"type\": 6,\n      \"name\": \"person\",\n      \"description\": \"Person who needs to be jailed\",\n      \"required\": true\n    }\n  ]\n},\n{\n  \"name\": \"unjail\",\n  \"description\": \"Remove someones timeout\",\n  \"options\": [\n    {\n      \"type\": 6,\n      \"name\": \"person\",\n      \"description\": \"Person who needs to be unjailed\",\n      \"required\": true\n    }\n  ]\n},\n{\n    \"name\": \"update\",\n    \"description\": \"Send a message showing added & removed features of your software\",\n    \"options\": []\n},\n{\n    \"name\": \"ticketpanel\",\n    \"description\": \"Create a new ticket panel\",\n    \"options\": []\n},\n{\n    \"name\": \"setconfig\",\n    \"description\": \"Create configuration value\",\n    \"options\": [\n        {\n            \"name\": \"config\",\n            \"description\": \"Name of the config file\",\n            \"required\": true,\n            \"type\": 3\n        },\n        {\n            \"name\": \"value\",\n            \"description\": \"The configuration value\",\n            \"required\": true,\n            \"type\": 3\n        }\n    ]\n},\n{\n    \"name\": \"age\",\n    \"description\": \"Manually set age\",\n    \"dm_permission\": false,\n    \"options\": [\n        {\n            \"name\": \"user\",\n            \"description\": \"The user whose age needs to be registered\",\n            \"required\": true,\n            \"type\": 6\n        },\n        {\n            \"name\": \"age\",\n            \"description\": \"The age\",\n            \"required\": true,\n            \"type\": 3\n        }\n    ]\n},\n{\n    \"name\": \"notecreate\",\n    \"description\": \"Create note for a user\",\n    \"dm_permission\": false,\n    \"options\": [\n        {\n            \"name\": \"user\",\n            \"description\": \"The user who needs to get a note on their name\",\n            \"required\": true,\n            \"type\": 6\n        },\n        {\n            \"name\": \"note\",\n            \"description\": \"The note\",\n            \"required\": true,\n            \"type\": 3\n        }\n    ]\n},\n{\n    \"name\": \"noteidcreate\",\n    \"description\": \"Create note for a user based on User ID\",\n    \"dm_permission\": false,\n    \"options\": [\n        {\n            \"name\": \"user\",\n            \"description\": \"The userID of the user who needs to get a note on their name\",\n            \"required\": true,\n            \"type\": 3\n        },\n        {\n            \"name\": \"note\",\n            \"description\": \"The note\",\n            \"required\": true,\n            \"type\": 3\n        }\n    ]\n},\n{\n    \"name\": \"noteedit\",\n    \"description\": \"Edit a note\",\n    \"dm_permission\": false,\n    \"options\": [\n        {\n            \"name\": \"id\",\n            \"description\": \"ID of the note\",\n            \"required\": true,\n            \"type\": 3\n        },\n        {\n            \"name\": \"note\",\n            \"description\": \"The note, be aware, this overwrites the old note.\",\n            \"required\": true,\n            \"type\": 3\n        }\n        ]\n},\n{\n    \"name\": \"notes\",\n    \"description\": \"Show notes on a user\",\n    \"dm_permission\": false,\n    \"options\": [\n        {\n            \"name\": \"user\",\n            \"description\": \"User you want to show the notes of.\",\n            \"required\": true,\n            \"type\": 6\n        }\n        ]\n},\n{\n    \"name\": \"notedelete\",\n    \"description\": \"Delete a note\",\n    \"dm_permission\": false,\n    \"options\": [\n        {\n            \"name\": \"id\",\n            \"description\": \"ID of the note you wish to delete\",\n            \"required\": true,\n            \"type\": 3\n        }\n        ]\n},\n{\n    \"name\": \"notesid\",\n    \"description\": \"See notes on a user based on UserID\",\n    \"dm_permission\": false,\n    \"options\": [\n        {\n            \"name\": \"userid\",\n            \"description\": \"The UserID of the user you want to see the notes of\",\n            \"required\": true,\n            \"type\": 3\n        }\n        ]\n},\n{\n  \"name\": \"kick\",\n  \"description\": \"Kick someone\",\n  \"options\": [\n    {\n      \"type\": 6,\n      \"name\": \"account\",\n      \"description\": \"The person to kick\",\n      \"required\": true\n    },\n{\n      \"type\": 3,\n      \"name\": \"reason\",\n      \"description\": \"Reason\",\n      \"required\": true\n    }\n  ]\n},\n{\n  \"name\": \"ban\",\n  \"description\": \"Ban someone\",\n  \"options\": [\n    {\n      \"type\": 6,\n      \"name\": \"account\",\n      \"description\": \"The person to ban\",\n      \"required\": true\n    },\n{\n      \"type\": 3,\n      \"name\": \"reason\",\n      \"description\": \"Ban reason\",\n      \"required\": true\n    }\n  ]\n},\n{\n  \"name\": \"idban\",\n  \"description\": \"Ban someone based on their UserID\",\n  \"options\": [\n    {\n      \"type\": 3,\n      \"name\": \"account\",\n      \"description\": \"The UserID of the person\",\n      \"required\": true\n    },\n{\n      \"type\": 3,\n      \"name\": \"reason\",\n      \"description\": \"Ban reason\",\n      \"required\": true\n    }\n  ]\n},\n{\n    \"name\": \"warn\",\n    \"description\": \"Register a warning\",\n    \"dm_permission\": false,\n    \"options\": [\n        {\n            \"name\": \"user\",\n            \"description\": \"The user you want to warn\",\n            \"required\": true,\n            \"type\": 6\n        },\n        {\n            \"name\": \"warning\",\n            \"description\": \"The warning you want to put in the system\",\n            \"required\": true,\n            \"type\": 3\n        }\n    ]\n},\n{\n    \"name\": \"warnid\",\n    \"description\": \"Warn someone based on their UserID\",\n    \"dm_permission\": false,\n    \"options\": [\n        {\n            \"name\": \"user\",\n            \"description\": \"The user you want to warn\",\n            \"required\": true,\n            \"type\": 3\n        },\n        {\n            \"name\": \"warning\",\n            \"description\": \"The warning you want to put in the system\",\n            \"required\": true,\n            \"type\": 3\n        }\n    ]\n},\n{\n    \"name\": \"warningedit\",\n    \"description\": \"Edit a warning\",\n    \"dm_permission\": false,\n    \"options\": [\n        {\n            \"name\": \"id\",\n            \"description\": \"ID of the warning\",\n            \"required\": true,\n            \"type\": 3\n        },\n        {\n            \"name\": \"warning\",\n            \"description\": \"The warning, be aware, this overwrites the old warning.\",\n            \"required\": true,\n            \"type\": 3\n        }\n        ]\n},\n{\n    \"name\": \"warnings\",\n    \"description\": \"Show warnings on a user\",\n    \"dm_permission\": false,\n    \"options\": [\n        {\n            \"name\": \"user\",\n            \"description\": \"User you want to show the warnings of.\",\n            \"required\": true,\n            \"type\": 6\n        }\n        ]\n},\n{\n    \"name\": \"warningdelete\",\n    \"description\": \"Delete a warning\",\n    \"dm_permission\": false,\n    \"options\": [\n        {\n            \"name\": \"id\",\n            \"description\": \"ID of the warning you wish to delete\",\n            \"required\": true,\n            \"type\": 3\n        }\n        ]\n},\n{\n    \"name\": \"warningsid\",\n    \"description\": \"See warnings on a user based on UserID\",\n    \"dm_permission\": false,\n    \"options\": [\n        {\n            \"name\": \"userid\",\n            \"description\": \"The UserID of the user you want to see the warnings of\",\n            \"required\": true,\n            \"type\": 3\n        }\n        ]\n},\n{\n    \"name\": \"remind\",\n    \"description\": \"Create a reminder\",\n    \"dm_permission\": false,\n    \"options\": [\n        {\n            \"name\": \"minutes\",\n            \"description\": \"In how many minutes should I remind you? (NUMBERS ONLY)\",\n            \"required\": true,\n            \"type\": 3\n        },\n        {\n            \"name\": \"reminder\",\n            \"description\": \"What do I need to remind you of?\",\n            \"required\": true,\n            \"type\": 3\n        }\n        ]\n}"
                         },
                         "outputs": {},
                         "active": true
@@ -1057,635 +1057,8 @@
         },
         "workspaces": [
             {
-                "id": "FeEPGflRci",
-                "active": true,
-                "info": {
-                    "title": "Cuddlegang timer",
-                    "description": "",
-                    "thumbnail": ""
-                },
-                "blocks": [
-                    {
-                        "color": "#5a5a5a",
-                        "x": 1760,
-                        "y": 480,
-                        "z": 1,
-                        "width": 280,
-                        "height": 380,
-                        "lock": false,
-                        "name": "edit_role",
-                        "inputs": {
-                            "action": "ZZig4qa3uZ",
-                            "role": "ntFZHhcfbM",
-                            "role_name": "mvIlHxkgJ8",
-                            "role_color": "8omt6QMSiD",
-                            "role_hoist": "QL2CYdwblX",
-                            "role_icon": "xWzABiXP7n",
-                            "role_position": "5GG0rsmyma",
-                            "role_permissions": "LISq6iB5me",
-                            "role_mentionable": "PmfkEdeRwM",
-                            "reason": "HrNbRhLM9y"
-                        },
-                        "options": {},
-                        "outputs": {
-                            "action": [
-                                "QivdPNmalw"
-                            ]
-                        },
-                        "active": true
-                    },
-                    {
-                        "color": "#5a5a5a",
-                        "x": 0,
-                        "y": 707,
-                        "z": 5,
-                        "width": 230,
-                        "height": 240,
-                        "lock": false,
-                        "name": "message_event",
-                        "inputs": {},
-                        "options": {},
-                        "outputs": {
-                            "action": [
-                                "z2zMvPk84D"
-                            ],
-                            "message": [
-                                "OMArn4uOfb"
-                            ],
-                            "server": [
-                                "C5rEDcsyH8",
-                                "YZJKgdmkBR",
-                                "i55j5v5DQ4"
-                            ],
-                            "channel": [],
-                            "user": [],
-                            "member": []
-                        },
-                        "active": true
-                    },
-                    {
-                        "color": "#5a5a5a",
-                        "x": 100,
-                        "y": 1080,
-                        "z": 6,
-                        "width": 580,
-                        "height": 160,
-                        "lock": false,
-                        "name": "get_role_info",
-                        "inputs": {
-                            "action": "BknobWSriv",
-                            "role": "sHAZrsy8rf"
-                        },
-                        "options": {
-                            "role_info": "16"
-                        },
-                        "outputs": {
-                            "action": [
-                                "M1ADoncw5G"
-                            ],
-                            "result": [
-                                "Ck2f1YgGAj"
-                            ]
-                        },
-                        "active": true
-                    },
-                    {
-                        "color": "#5a5a5a",
-                        "x": 845,
-                        "y": 1164,
-                        "z": 7,
-                        "width": 500,
-                        "height": 180,
-                        "lock": false,
-                        "name": "check_comparison",
-                        "inputs": {
-                            "action": "trihbWQqdB",
-                            "value1": "rAVaClusTx",
-                            "value2": "Ck2f1YgGAj"
-                        },
-                        "options": {
-                            "comparison_type": "includes",
-                            "value2": ""
-                        },
-                        "outputs": {
-                            "action1": [
-                                "ZZig4qa3uZ"
-                            ],
-                            "action2": []
-                        },
-                        "active": true
-                    },
-                    {
-                        "color": "#5a5a5a",
-                        "x": 1252,
-                        "y": 941,
-                        "z": 11,
-                        "width": 450,
-                        "height": 180,
-                        "lock": false,
-                        "name": "find_role",
-                        "inputs": {
-                            "action": "AJI6TjYB3Q",
-                            "server": "C5rEDcsyH8",
-                            "search_value": "I5b2qhV0zD"
-                        },
-                        "options": {
-                            "find_role_by": "id",
-                            "search_value": ""
-                        },
-                        "outputs": {
-                            "action": [
-                                "BknobWSriv"
-                            ],
-                            "role": [
-                                "sHAZrsy8rf",
-                                "ntFZHhcfbM",
-                                "2VcwOirtEh"
-                            ]
-                        },
-                        "active": true
-                    },
-                    {
-                        "color": "#5a5a5a",
-                        "x": 280,
-                        "y": 950,
-                        "z": 12,
-                        "width": 310,
-                        "height": 120,
-                        "lock": false,
-                        "name": "text",
-                        "inputs": {},
-                        "options": {
-                            "text": "config/roles/cuddlegang.txt"
-                        },
-                        "outputs": {
-                            "text": [
-                                "rQMVuaqcAE"
-                            ]
-                        },
-                        "active": true
-                    },
-                    {
-                        "color": "#5a5a5a",
-                        "x": 70,
-                        "y": 1270,
-                        "z": 13,
-                        "width": 660,
-                        "height": 160,
-                        "lock": false,
-                        "name": "get_message_info",
-                        "inputs": {
-                            "action": "M1ADoncw5G",
-                            "message": "OMArn4uOfb"
-                        },
-                        "options": {
-                            "message_info": "5"
-                        },
-                        "outputs": {
-                            "action": [
-                                "trihbWQqdB"
-                            ],
-                            "result": [
-                                "rAVaClusTx"
-                            ]
-                        },
-                        "active": true
-                    },
-                    {
-                        "color": "#5a5a5a",
-                        "x": 817,
-                        "y": 1432,
-                        "z": 17,
-                        "width": 280,
-                        "height": 110,
-                        "lock": false,
-                        "name": "boolean",
-                        "inputs": {},
-                        "options": {
-                            "boolean_type": "false"
-                        },
-                        "outputs": {
-                            "boolean": [
-                                "PmfkEdeRwM"
-                            ]
-                        },
-                        "active": true
-                    },
-                    {
-                        "color": "#5a5a5a",
-                        "x": 2400,
-                        "y": 1290,
-                        "z": 18,
-                        "width": 350,
-                        "height": 120,
-                        "lock": false,
-                        "name": "wait",
-                        "inputs": {
-                            "action": "G6ytzPELt9",
-                            "time": "4LBSzXsmP9"
-                        },
-                        "options": {
-                            "time_type": "hours"
-                        },
-                        "outputs": {
-                            "action": [
-                                "LEtUaZwF3O"
-                            ]
-                        },
-                        "active": true
-                    },
-                    {
-                        "color": "#5a5a5a",
-                        "x": 1773,
-                        "y": 1541,
-                        "z": 19,
-                        "width": 350,
-                        "height": 110,
-                        "lock": false,
-                        "name": "number",
-                        "inputs": {},
-                        "options": {
-                            "number": 2
-                        },
-                        "outputs": {
-                            "number": [
-                                "4LBSzXsmP9"
-                            ]
-                        },
-                        "active": true
-                    },
-                    {
-                        "color": "#5a5a5a",
-                        "x": 2293,
-                        "y": 1469,
-                        "z": 20,
-                        "width": 280,
-                        "height": 380,
-                        "lock": false,
-                        "name": "edit_role",
-                        "inputs": {
-                            "action": "LEtUaZwF3O",
-                            "role": "2VcwOirtEh",
-                            "role_name": "UJwImv8uTO",
-                            "role_color": "tMFR5waTdi",
-                            "role_hoist": "Byj1NoCRoX",
-                            "role_icon": "7ODLZGTWLx",
-                            "role_position": "bZbzTtlW4m",
-                            "role_permissions": "rGQQcyW70x",
-                            "role_mentionable": "iPHvIv7UJ7",
-                            "reason": "6GPIKYkVwW"
-                        },
-                        "options": {},
-                        "outputs": {
-                            "action": [
-                                "dYCNusL4Ny"
-                            ]
-                        },
-                        "active": true
-                    },
-                    {
-                        "color": "#5a5a5a",
-                        "x": 1785,
-                        "y": 1703,
-                        "z": 21,
-                        "width": 280,
-                        "height": 110,
-                        "lock": false,
-                        "name": "boolean",
-                        "inputs": {},
-                        "options": {
-                            "boolean_type": "true"
-                        },
-                        "outputs": {
-                            "boolean": [
-                                "iPHvIv7UJ7"
-                            ]
-                        },
-                        "active": true
-                    },
-                    {
-                        "color": "",
-                        "x": 2310,
-                        "y": 1120,
-                        "z": 0,
-                        "width": 370,
-                        "height": 120,
-                        "lock": false,
-                        "name": "console_log",
-                        "inputs": {
-                            "action": "FVUbmZQyzC",
-                            "value": "UQmWCsU3D6"
-                        },
-                        "options": {
-                            "value": "Cuddlegang pinged"
-                        },
-                        "outputs": {
-                            "action": [
-                                "G6ytzPELt9"
-                            ]
-                        },
-                        "active": true
-                    },
-                    {
-                        "color": "",
-                        "x": 3460,
-                        "y": 1750,
-                        "z": 0,
-                        "width": 370,
-                        "height": 120,
-                        "lock": false,
-                        "name": "console_log",
-                        "inputs": {
-                            "action": "JPKtbmGTKg",
-                            "value": "XXM8JSJTFz"
-                        },
-                        "options": {
-                            "value": "Cuddlegang reset"
-                        },
-                        "outputs": {
-                            "action": []
-                        },
-                        "active": true
-                    },
-                    {
-                        "color": "",
-                        "x": 2830,
-                        "y": 720,
-                        "z": 0,
-                        "width": 510,
-                        "height": 230,
-                        "lock": false,
-                        "name": "find_channel",
-                        "inputs": {
-                            "action": "NEJq8fuPvt",
-                            "server": "YZJKgdmkBR",
-                            "search_value": "WpzU1jUNfz"
-                        },
-                        "options": {
-                            "channel_type": "any",
-                            "find_channel_by": "id",
-                            "search_value": ""
-                        },
-                        "outputs": {
-                            "action": [
-                                "PFgSftZPel"
-                            ],
-                            "channel": [
-                                "vlPdo4wK42",
-                                "1NdnaKwffI"
-                            ]
-                        },
-                        "active": true
-                    },
-                    {
-                        "color": "",
-                        "x": 2810,
-                        "y": 1050,
-                        "z": 0,
-                        "width": 420,
-                        "height": 380,
-                        "lock": false,
-                        "name": "better_send_message_v14",
-                        "inputs": {
-                            "action": "PFgSftZPel",
-                            "channel": "vlPdo4wK42",
-                            "embed": "WpCbfgmw2B",
-                            "attachment": "FuHMPG0FZk",
-                            "text1": "qu65S7Q74C",
-                            "text2": "rhiX5NAjS2",
-                            "text3": "q4aSUQ8Zhk",
-                            "text4": "0w3EZg66bm",
-                            "text5": "a7zhE1KIhf",
-                            "menu": "pqe9AaGZZe",
-                            "button": "j40EYBuFB7",
-                            "button_row": "DAiMGzsAOF"
-                        },
-                        "options": {
-                            "text": "Cuddlegang pinged"
-                        },
-                        "outputs": {
-                            "action": [
-                                "FVUbmZQyzC"
-                            ],
-                            "message": [],
-                            "error": []
-                        },
-                        "active": true
-                    },
-                    {
-                        "color": "",
-                        "x": 2720,
-                        "y": 1580,
-                        "z": 0,
-                        "width": 420,
-                        "height": 380,
-                        "lock": false,
-                        "name": "better_send_message_v14",
-                        "inputs": {
-                            "action": "dYCNusL4Ny",
-                            "channel": "1NdnaKwffI",
-                            "embed": "SdExNlvZXu",
-                            "attachment": "oTivyHr1Gg",
-                            "text1": "XypxPgI43r",
-                            "text2": "57TUdU5ozu",
-                            "text3": "o9esPom1Yh",
-                            "text4": "MHVkTW6srw",
-                            "text5": "Co0uy6Iwlm",
-                            "menu": "oCUkroC4G9",
-                            "button": "rnwazqfRkp",
-                            "button_row": "G0S7QJdTvV"
-                        },
-                        "options": {
-                            "text": "Cuddlegang reset"
-                        },
-                        "outputs": {
-                            "action": [
-                                "JPKtbmGTKg"
-                            ],
-                            "message": [],
-                            "error": []
-                        },
-                        "active": true
-                    },
-                    {
-                        "color": "",
-                        "x": 640,
-                        "y": 760,
-                        "z": 0,
-                        "width": 460,
-                        "height": 140,
-                        "lock": false,
-                        "name": "read_file",
-                        "inputs": {
-                            "action": "qA0bkXaPFh",
-                            "file_path": "rQMVuaqcAE"
-                        },
-                        "options": {
-                            "conversion_type": "text"
-                        },
-                        "outputs": {
-                            "action": [
-                                "AJI6TjYB3Q"
-                            ],
-                            "action2": [],
-                            "content": [
-                                "I5b2qhV0zD"
-                            ]
-                        },
-                        "active": true
-                    },
-                    {
-                        "color": "",
-                        "x": 2290,
-                        "y": 630,
-                        "z": 0,
-                        "width": 460,
-                        "height": 140,
-                        "lock": false,
-                        "name": "read_file",
-                        "inputs": {
-                            "action": "QivdPNmalw",
-                            "file_path": "jlFzzANvMa"
-                        },
-                        "options": {
-                            "conversion_type": "text"
-                        },
-                        "outputs": {
-                            "action": [
-                                "NEJq8fuPvt"
-                            ],
-                            "action2": [],
-                            "content": [
-                                "WpzU1jUNfz"
-                            ]
-                        },
-                        "active": true
-                    },
-                    {
-                        "color": "",
-                        "x": 2120,
-                        "y": 470,
-                        "z": 0,
-                        "width": 280,
-                        "height": 120,
-                        "lock": false,
-                        "name": "text",
-                        "inputs": {},
-                        "options": {
-                            "text": "config/channels/log.txt"
-                        },
-                        "outputs": {
-                            "text": [
-                                "jlFzzANvMa"
-                            ]
-                        },
-                        "active": true
-                    },
-                    {
-                        "color": "",
-                        "x": 380,
-                        "y": 380,
-                        "z": 0,
-                        "width": 640,
-                        "height": 160,
-                        "lock": false,
-                        "name": "get_server_info",
-                        "inputs": {
-                            "action": "z2zMvPk84D",
-                            "server": "i55j5v5DQ4"
-                        },
-                        "options": {
-                            "server_info": "17"
-                        },
-                        "outputs": {
-                            "action": [
-                                "WKFi6UAvzA"
-                            ],
-                            "result": [
-                                "X2ZRlullmN"
-                            ]
-                        },
-                        "active": true
-                    },
-                    {
-                        "color": "",
-                        "x": 400,
-                        "y": 550,
-                        "z": 0,
-                        "width": 460,
-                        "height": 140,
-                        "lock": false,
-                        "name": "read_file",
-                        "inputs": {
-                            "action": "WKFi6UAvzA",
-                            "file_path": "9N3O8G3JlK"
-                        },
-                        "options": {
-                            "conversion_type": "text"
-                        },
-                        "outputs": {
-                            "action": [
-                                "5RZqPo1UMh"
-                            ],
-                            "action2": [],
-                            "content": [
-                                "o0zpSyyaUm"
-                            ]
-                        },
-                        "active": true
-                    },
-                    {
-                        "color": "",
-                        "x": 36,
-                        "y": 540,
-                        "z": 0,
-                        "width": 280,
-                        "height": 120,
-                        "lock": false,
-                        "name": "text",
-                        "inputs": {},
-                        "options": {
-                            "text": "config/server.txt"
-                        },
-                        "outputs": {
-                            "text": [
-                                "9N3O8G3JlK"
-                            ]
-                        },
-                        "active": true
-                    },
-                    {
-                        "color": "",
-                        "x": 940,
-                        "y": 560,
-                        "z": 0,
-                        "width": 480,
-                        "height": 180,
-                        "lock": false,
-                        "name": "check_comparison",
-                        "inputs": {
-                            "action": "5RZqPo1UMh",
-                            "value1": "X2ZRlullmN",
-                            "value2": "o0zpSyyaUm"
-                        },
-                        "options": {
-                            "comparison_type": "equal",
-                            "value2": ""
-                        },
-                        "outputs": {
-                            "action1": [
-                                "qA0bkXaPFh"
-                            ],
-                            "action2": []
-                        },
-                        "active": true
-                    }
-                ],
-                "notes": []
-            },
-            {
                 "id": "g55cERllAK",
-                "active": true,
+                "active": false,
                 "info": {
                     "title": "Bumping",
                     "description": "",
@@ -2106,7 +1479,7 @@
             },
             {
                 "id": "GUb1xetdjd",
-                "active": true,
+                "active": false,
                 "info": {
                     "title": "Stats",
                     "description": "",
@@ -3977,7 +3350,7 @@
             },
             {
                 "id": "TDrVYpZZND",
-                "active": true,
+                "active": false,
                 "info": {
                     "title": "Inactive maker 2.0",
                     "description": "",
@@ -16666,7 +16039,7 @@
             },
             {
                 "id": "1mU4dIxwwk",
-                "active": true,
+                "active": false,
                 "info": {
                     "title": "Logging",
                     "description": "",
@@ -21013,7 +20386,7 @@
         "workspaces": [
             {
                 "id": "NsrmEoCrz2",
-                "active": true,
+                "active": false,
                 "info": {
                     "title": "Appeal",
                     "description": "",
@@ -44206,7 +43579,7 @@
         "workspaces": [
             {
                 "id": "vMeTyF9RIR",
-                "active": true,
+                "active": false,
                 "info": {
                     "title": "Role flipper 9000",
                     "description": "",
@@ -45077,7 +44450,7 @@
             },
             {
                 "id": "tLMTnMm10F",
-                "active": true,
+                "active": false,
                 "info": {
                     "title": "Check Role Counter",
                     "description": "",
@@ -45292,7 +44665,7 @@
             },
             {
                 "id": "tlLerf4Jnf",
-                "active": true,
+                "active": false,
                 "info": {
                     "title": "Role Receiver",
                     "description": "",
@@ -45637,7 +45010,7 @@
             },
             {
                 "id": "B7B2DNrMHa",
-                "active": true,
+                "active": false,
                 "info": {
                     "title": "Role Receiver 18+",
                     "description": "",
@@ -46060,7 +45433,7 @@
             },
             {
                 "id": "jtvS30F2Qw",
-                "active": true,
+                "active": false,
                 "info": {
                     "title": "Self Roles",
                     "description": "",
@@ -69381,7 +68754,7 @@
         "workspaces": [
             {
                 "id": "DEwtjR5jG3",
-                "active": true,
+                "active": false,
                 "info": {
                     "title": "Hal des Roems",
                     "description": "",
@@ -70876,7 +70249,7 @@
             },
             {
                 "id": "rBAtIInEss",
-                "active": true,
+                "active": false,
                 "info": {
                     "title": "Minecraft Whitelist",
                     "description": "",
@@ -71527,7 +70900,7 @@
             },
             {
                 "id": "z1gNhwBta0",
-                "active": true,
+                "active": false,
                 "info": {
                     "title": "/herinnering",
                     "description": "",
@@ -72423,7 +71796,7 @@
             },
             {
                 "id": "PLjJNP5nGh",
-                "active": true,
+                "active": false,
                 "info": {
                     "title": "SRSBot",
                     "description": "",
@@ -72781,7 +72154,7 @@
             },
             {
                 "id": "wDJUCbw2wT",
-                "active": true,
+                "active": false,
                 "info": {
                     "title": "HRTBot",
                     "description": "",
@@ -73139,7 +72512,7 @@
             },
             {
                 "id": "Yt5sWJ3MOg",
-                "active": true,
+                "active": false,
                 "info": {
                     "title": "Birthdaybot",
                     "description": "",
@@ -75111,7 +74484,7 @@
             },
             {
                 "id": "vpEvMOShO0",
-                "active": true,
+                "active": false,
                 "info": {
                     "title": "Member welcome back",
                     "description": "",
@@ -76770,7 +76143,7 @@
             },
             {
                 "id": "ISsPzkCeWb",
-                "active": true,
+                "active": false,
                 "info": {
                     "title": "meme commandos",
                     "description": "",
